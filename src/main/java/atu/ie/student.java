@@ -5,13 +5,15 @@ public class student {
     String semail;
     String scourse;
 
-    public Student(String name,String email,String course){
-        this.sname = name;
-        this.semail = email;
-        this.scourse = course;
+    public String getSname() {
+        return sname;
     }
 
-    public static void main(String[] args){
+    public void setSname(String name) {
+        this.sname = name;
+    }
 
+    public void display(){
+        System.out.println("Name: " + sname + "\n" + "Email: " + semail + "\n" + "Course: " + scourse + "\n");
     }
 }
