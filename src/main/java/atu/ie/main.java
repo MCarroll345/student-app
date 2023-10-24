@@ -11,14 +11,33 @@ public class main {
 
 
         System.out.println("Please enter student name: ");
-        s1.sname = scanner.nextLine();
+        s1.setSname(scanner.nextLine());
         System.out.println("\nPlease enter student email: ");
-        s1.semail = scanner.nextLine();
+        s1.setSemail(scanner.nextLine());
         System.out.println("\nPlease enter student course: ");
-        s1.scourse = scanner.nextLine();
+        s1.setScourse(scanner.nextLine());
 
-        s1.getSname();
+        String name2;
+        System.out.println("Please enter student name: ");
+        name2 = scanner.nextLine();
+        student s2 = new student(name2);
+        System.out.println("\nPlease enter student email: ");
+        s2.setSemail(scanner.nextLine());
+        System.out.println("\nPlease enter student course: ");
+        s2.setScourse(scanner.nextLine());
+
+        String name3,email3,course3;
+        System.out.println("Please enter student name: ");
+        name3 = scanner.nextLine();
+        System.out.println("\nPlease enter student email: ");
+        email3 = scanner.nextLine();
+        System.out.println("\nPlease enter student course: ");
+        course3 = scanner.nextLine();
+        student s3 = new student(name3,email3,course3);
 
         s1.display();
+        s2.display();
+        s3.display();
+
     }
 }
