@@ -1,9 +1,9 @@
 package atu.ie;
 
 public class student {
-    String sname;
-    String semail;
-    String scourse;
+    private String sname;
+    private String semail;
+    private String scourse;
 
     public String getSname() {
         return sname;
