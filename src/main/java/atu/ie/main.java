@@ -3,12 +3,11 @@ package atu.ie;
 import java.util.Scanner;
 
 public class main {
-    Scanner scanner  = new Scanner(System.in);
 
     public static void main(String[] args){
         Scanner scanner  = new Scanner(System.in);
-        student s1 = new student();
 
+        student s1 = new student();
 
         System.out.println("Please enter student name: ");
         s1.setSname(scanner.nextLine());

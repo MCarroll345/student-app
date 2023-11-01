@@ -1,28 +1,31 @@
 package atu.ie;
 
 public class student {
-    String sname;
-    String semail;
-    String scourse;
+    private String sname;
+    private String semail;
+    private String scourse;
 
-    public String getSname() {
-        return sname;
-    }
     public void setSname(String name) {
         this.sname = name;
     }
+    public void setSemail(String email) {
+        this.semail = email;
+    }
+    public void setScourse(String course) {
+        this.scourse = course;
+    }
+    public String getSname() {
+        return sname;
+    }
     public String getSemail() {
         return semail;
-    }
-    public void setSemail(String semail) {
-        this.semail = semail;
     }
     public String getScourse() {
         return scourse;
     }
 
-    public void setScourse(String scourse) {
-        this.scourse = scourse;
+    public student(String sname) {
+        this.sname = sname;
     }
 
     public student() {
@@ -31,11 +34,7 @@ public class student {
         this.scourse = " ";
     }
 
-    public student(String sname) {
-        this.sname = sname;
-    }
-
-    public student(String sname,String semail, String scourse) {
+   public student(String sname,String semail, String scourse) {
         this.sname = sname;
         this.semail = semail;
         this.scourse = scourse;
