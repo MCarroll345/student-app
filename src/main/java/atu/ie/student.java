@@ -24,9 +24,7 @@ public class student {
         return scourse;
     }
 
-    public student(String sname) {
-        this.sname = sname;
-    }
+    public student(String sname) { this.sname = sname; }
 
     public student() {
         this.sname = " ";
